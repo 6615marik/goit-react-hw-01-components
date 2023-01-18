@@ -1,0 +1,46 @@
+.transactionHistory {
+    width: 700px;
+    margin: 50px auto;
+    border: 4px;
+
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.transactionHistory:hover {
+    -webkit-box-shadow: 10px 5px 5px rgba(35, 10, 70, 0.4);
+    box-shadow: 10px 5px 5px rgba(39, 20, 110, 0.4);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.transactionHistory thead {
+    text-align: center;
+    background: rgb(134, 178, 220);
+    height: 40px;
+    color: azure;
+}
+
+.transactionHistory thead tr {
+    text-transform: uppercase;
+}
+
+.transactionHistory tbody {
+    text-align: center;
+}
+
+.transactionHistory tbody tr {
+    height: 30px;
+}
+
+.transactionHistory tbody tr:hover {
+    background-color: rgba(31, 128, 208, 0.8);
+}
+
+
+
+.transactionHistory tbody tr:nth-child(odd) {
+    background-color: rgba(99, 102, 122, 0.2);
+}

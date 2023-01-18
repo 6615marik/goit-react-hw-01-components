@@ -2,7 +2,7 @@
     width: 700px;
     margin: 50px auto;
     border: 4px solid rgb(134, 178, 220);
-
+    border-radius: 10px;
     -webkit-transition: -webkit-transform 0.2s;
     transition: -webkit-transform 0.2s;
     transition: transform 0.2s;

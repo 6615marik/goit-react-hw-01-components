@@ -10,30 +10,19 @@ import friends from '../data/friends.json'
 import {TransactionHistory} from './TransactionHistory/TransactionHistory'
 import transactions from '../data/transactions.json'
 
-export const App = ({ username, tag, location, avatar, stats }) => {
-  
+export const App = () => {
+  const { username, tag, location, avatar, stats } = user;
   return (
   <>
-    <>
     <Profile
-  username={user.username}
-  tag={user.tag}
-  location={user.location}
-  avatar={user.avatar}
-  stats={user.stats}/>
-      </>
-
-      <>
-        <Statatiscs title="Upload stats"stats={data}/>
-      </>
-
-      <>
-        <FriendList friends={friends} />
-      </>
-
-      <>
-        <TransactionHistory items={transactions} />
-      </>
+      username={username}
+      tag={tag}
+      location={location}
+      avatar={avatar}
+      stats={stats}/>
+    <Statatiscs title="Upload stats"stats={data}/>
+    <FriendList friends={friends} />
+    <TransactionHistory items={transactions} />
   </>
   )
 };
